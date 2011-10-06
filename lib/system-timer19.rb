@@ -5,7 +5,7 @@ begin
 rescue LoadError
 end
 
-if defined?(:SystemTimer)
+if defined?(SystemTimer)
   module Kernel
     def timeout(*args, &block)
       SystemTimer.timeout(*args, &block)
