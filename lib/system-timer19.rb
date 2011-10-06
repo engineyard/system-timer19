@@ -1,4 +1,4 @@
-require "system-timer19/version"
+require "system_timer19/version"
 
 begin
   require 'system_timer'

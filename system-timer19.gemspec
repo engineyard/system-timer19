@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "system-timer19/version"
+require "system_timer19/version"
 
 Gem::Specification.new do |s|
   s.name        = "system-timer19"
