@@ -1,5 +1,10 @@
 require "system-timer19/version"
 
+begin
+  require 'system_timer'
+rescue LoadError
+end
+
 if defined?(:SystemTimer)
   module Kernel
     def timeout(seconds, &block)
