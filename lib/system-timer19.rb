@@ -10,8 +10,10 @@ if defined?(SystemTimer)
     def timeout(*args, &block)
       SystemTimer.timeout(*args, &block)
     end
-    alias_method :timeout_after, :timeout
   end
 else
   require 'timeout'
+end
+module Kernel
+  alias_method :timeout_after, :timeout
 end
