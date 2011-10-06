@@ -7,8 +7,8 @@ end
 
 if defined?(:SystemTimer)
   module Kernel
-    def timeout(seconds, &block)
-      SystemTimer.timeout(seconds, &block)
+    def timeout(*args, &block)
+      SystemTimer.timeout(*args, &block)
     end
     alias_method :timeout_after, :timeout
   end
