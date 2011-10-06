@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Joshua Lane"]
   s.email       = ["jlane@engineyard.com"]
   s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{use timeout from SystemTimer in 1.8 or Kernel.timeout in 1.9}
+  s.description = %q{ease migration off of SystemTimer}
 
   s.rubyforge_project = "system-timer19"
 
